@@ -1,0 +1,45 @@
+.container {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.pic {
+    display: block;
+    cursor: grab;
+    background: #dedede;
+}
+
+.scroll>div:nth-child(odd) {
+    background: #969696;
+}
+
+.pic img {
+    height: 50px;
+    width: auto;
+    margin: 30px;
+}
+
+.scroll {
+    display: inline-block;
+    overflow-y: scroll;
+    height: 102px;
+    margin: 0 20px;
+}
+
+#key .lock {
+    display: block;
+}
+
+#key .unlock {
+    display: none;
+}
+
+#key.match .lock {
+    display: none;
+}
+
+#key.match .unlock {
+    display: block;
+}
+
+.scroll::-webkit-scrollbar { width: 0 !important }
